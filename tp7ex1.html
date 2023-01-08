@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP7ex1</title>
+        
+    </head>
+    <body>
+        <script language="javascript">
+            function echanger ()
+            {
+                var temp = document.getElementById('text1').value;
+                document.getElementById('text1').value=
+                document.getElementById('text2').value;
+                document.getElementById('text2').value= temp;
+            }
+        </script>
+        <div style="text-align:center">Cliquer sur le bouton pour échanger les contenus des deux zones de texte :<br>
+        <input type="text" id="text1">
+        <input type="button"  value="Echanger" onClick="echanger()"> 
+        <input type="text" id="text2">
+    </div>
+    </body>
+</html>
